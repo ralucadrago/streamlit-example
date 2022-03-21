@@ -39,7 +39,7 @@ else:
 df = pd.read_csv("USA_Housing.csv")
 
 st.text("Do you want to see the data?")
-ye = st.checkbox("Yes")
-nah = st.checkbox("No")
+yes
+no
 if ye:
     df.head(10)
