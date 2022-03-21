@@ -16,5 +16,5 @@ if yes:
     st.title("😊")
 elif no:
     st.title("😭")
-elif yes and no:
+if yes and no:
     st.title("🙃")
