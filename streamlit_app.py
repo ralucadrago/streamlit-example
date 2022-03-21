@@ -13,6 +13,6 @@ yes = st.checkbox("Yes")
 no = st.checkbox("No")
 
 if yes:
-    st.text(:smile:)
+    st.text(":smile:")
 if no:
-    st.text(:sad:)
+    st.text(":sad:")
