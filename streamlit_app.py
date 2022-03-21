@@ -37,3 +37,9 @@ else:
     st.text("I respect you")
 
 df = pd.read_csv("USA_Housing")
+
+st.text("Do you want to see the data?")
+yes = st.checkbox("Yes")
+no = st.checkbox("No")
+if yes:
+    df.head(10)
