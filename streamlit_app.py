@@ -51,7 +51,7 @@ if how == "data frame shape":
     df.shape
 elif how == "data types":
     df.dtypes()
-elif how = "null value counts":
+elif how == "null value counts":
     df.isnull().sum()
 else:
     df.describe()
