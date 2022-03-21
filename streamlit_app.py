@@ -36,10 +36,23 @@ elif coffee < 6:
 else:
     st.text("I respect you")
 
+st.title("Time for some data analysis")
 df = pd.read_csv("USA_Housing.csv")
 
 st.text("Do you want to see the data?")
 ye = st.button("Click to show data")
-#if ye:
-
-df
+if ye:
+    df
+    
+st.text("Let's explore some data 😄")
+analysis = ["data frame shape", "data types", "null value counts", "summary statistics"]
+how = st.selectbox("What would you like to see?", analysis)
+if how == "data frame shape":
+    df.shape
+elif how == "data types":
+    df.dtypes()
+elif how = "null value counts":
+    df.isnull().sum()
+else:
+    df.describe()
+    
