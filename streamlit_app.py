@@ -40,5 +40,6 @@ df = pd.read_csv("USA_Housing.csv")
 
 st.text("Do you want to see the data?")
 ye = st.button("Click to show data")
-if ye:
-    df.head(10)
+#if ye:
+
+df.head(10)
