@@ -14,5 +14,7 @@ no = st.checkbox("No")
 
 if yes:
     st.title("😊")
-if no:
+elif no:
     st.title("😭")
+elif yes and no:
+    st.title("🙃")
