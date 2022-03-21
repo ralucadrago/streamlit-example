@@ -21,5 +21,5 @@ if yes and no:
     
 options = ["Lisa", "Lisa", "Lisa", "Lisa", "Lisa"]
 st.text("Who's your favourite instructor?")
-opinion = st.selectbox(options)
+opinion = st.selectbox("Pick an instructor", options)
 st.text("Congratulations, you selected {}".format(opinion))
