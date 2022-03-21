@@ -50,7 +50,7 @@ how = st.selectbox("What would you like to see?", analysis)
 if how == "data frame shape":
     df.shape
 elif how == "data types":
-    df.dtypes()
+    df.dtypes
 elif how == "null value counts":
     df.isnull().sum()
 else:
