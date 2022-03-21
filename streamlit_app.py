@@ -39,7 +39,6 @@ else:
 df = pd.read_csv("USA_Housing.csv")
 
 st.text("Do you want to see the data?")
-yes
-no
+ye = st.button("Click to show data")
 if ye:
     df.head(10)
