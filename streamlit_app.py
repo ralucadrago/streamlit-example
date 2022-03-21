@@ -20,6 +20,6 @@ if yes and no:
     st.title("🙃")
     
 options = ["Lisa"]*5
-st.text("Who's your favourite instructor?"
+st.text("Who's your favourite instructor?")
 opinion = st.selectbox(options)
 st.text("Congratulations, you selected {}".format(opinion))
