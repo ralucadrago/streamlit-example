@@ -12,12 +12,13 @@ st.text("Do you like making apps?")
 yes = st.checkbox("Yes")
 no = st.checkbox("No")
 
-if yes:
+if yes and no:
+    st.title("🙃")
+elif yes:
     st.title("😊")
 elif no:
     st.title("😭")
-if yes and no:
-    st.title("🙃")
+
     
 options = ["Lisa", "Lisa", "Lisa", "Lisa", "Lisa"]
 st.text("Who's your favourite instructor?")
