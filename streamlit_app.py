@@ -36,7 +36,7 @@ elif coffee < 6:
 else:
     st.text("I respect you")
 
-df = pd.read_csv("USA_Housing")
+df = pd.read_csv("USA_Housing.csv")
 
 st.text("Do you want to see the data?")
 yes = st.checkbox("Yes")
