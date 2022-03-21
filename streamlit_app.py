@@ -19,7 +19,7 @@ elif no:
 if yes and no:
     st.title("🙃")
     
-options = ["Lisa"]*5
+options = ["Lisa", "Lisa", "Lisa", "Lisa", "Lisa"]
 st.text("Who's your favourite instructor?")
 opinion = st.selectbox(options)
 st.text("Congratulations, you selected {}".format(opinion))
