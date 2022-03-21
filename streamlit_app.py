@@ -24,3 +24,16 @@ options = ["Lisa", "Lisa", "Lisa", "Lisa", "Lisa"]
 st.text("Who's your favourite instructor?")
 opinion = st.selectbox("Pick an instructor", options)
 st.text("Congratulations, you selected {}".format(opinion))
+
+st.text("Coffee is very important")
+coffee = st.slider("How many coffees do you drink in a day?", 0, 10)
+if coffee == 0:
+    st.text("Weakling")
+elif coffee < 3:
+    st.text("Acceptable")
+elif coffee < 6:
+    st.text("Welcome to adult life")
+else:
+    st.text("I respect you")
+
+
