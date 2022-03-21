@@ -7,3 +7,12 @@ st.text("Click the button")
 button = st.button("Click meeee")
 if button:
     st.title("Why would you do that?")
+    
+st.text("Do you like making apps?")
+yes = st.checkbox("Yes")
+no = st.checkbox("No")
+
+if yes:
+    st.text(:smile:)
+if no:
+    st.text(:sad:)
