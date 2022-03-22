@@ -42,6 +42,7 @@ else:
 
 st.title("Time for some data analysis")
 df = pd.read_csv("USA_Housing.csv")
+df = df.rename(columns = {'Avg. Area Income': 'Income', 'Avg. Area House Age' : 'Age', 'Avg. Area Number of Rooms' : 'Rooms', 'Area Population' : 'Population'})
 
 st.text("We are going to analyse the USA Housing dataset")
 ye = st.button("Click to show data")
