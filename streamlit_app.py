@@ -110,4 +110,23 @@ perc2 = np.round((rmse_test/avg2)*100, 2)
 st.text("Okay, but what does that mean? Let's add some context")
 st.text(f'The train RMSE as a percentage of the mean is {perc}%,\nThe test RMSE as a percentage of the mean is {perc2}%')
 st.text("Nice")
-    
+
+st.text("Now let's visualise our results")
+
+cols = ['Income', 'Age', 'Rooms', 'Population']
+feature = st.selectbox("Which feature would you like to see the residuals of?")
+fig = plt.figure(figsize=(12,8))
+fig = sm.graphics.plot_regress_exog(results, feature, fig=fig)
+st.pyplot(fig)
+
+fig = sns.displot(y_test- price_pred2, kind = 'kde')
+st.pyplot(fig)
+                    
+fig = plt.figure(figsize=(10, 6))
+sns.regplot(x=y_test, y=price_pred2, line_kws={"color": "red"})
+plt.ylabel('Predicted price',fontsize ='15')
+plt.xlabel('Actual price',fontsize ='15')
+plt.xticks(fontsize ='15')
+plt.yticks(fontsize ='15')
+plt.title('Actual vs Predicted price')
+st.pyplot(fig)
