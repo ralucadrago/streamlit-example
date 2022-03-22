@@ -122,6 +122,7 @@ st.pyplot(fig)
 st.text("Let's check if our residuals are normally distributed")
 fig = plt.figure(figsize=(10,6))
 fig = sns.displot(y_test- price_pred2, kind = 'kde')
+plt.xlabel('Price Residuals',fontsize ='15')
 st.pyplot(fig)
 st.text("Yes they are 🎉")
 
