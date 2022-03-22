@@ -69,7 +69,7 @@ elif how == "summary statistics":
     df2 = pd.DataFrame(df.describe())
     df2
 else:
-    df3 =  pd.DataFrame(df.isnull().sum(), columns = ["column", "null count"])
+    df3 =  pd.DataFrame(df.isnull().sum(), columns = ["null count"])
     df3
 
 st.text("That data looks pretty nice, right?")
