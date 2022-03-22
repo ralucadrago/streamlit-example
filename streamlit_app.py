@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-import statsmodels as sm
+import statsmodels.api as sm
 
 st.title("Oh hey its an app")
 
