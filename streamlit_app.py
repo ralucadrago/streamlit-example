@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
@@ -54,8 +54,10 @@ if how == "data frame shape":
     df.shape
 elif how == "pairplot":
     sns.pairplot(data = df)
+    plt.show()
 elif how == "heatmap":
     sns.heatmap(df.corr(), vmin = -1, vmax = 1, annot = True)
+    plt.show()
 #else:
     #df.describe()
     
