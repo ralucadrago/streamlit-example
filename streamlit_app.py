@@ -53,11 +53,13 @@ how = st.selectbox("What would you like to see?", analysis)
 if how == "data frame shape":
     df.shape
 elif how == "pairplot":
-    sns.pairplot(data = df)
-    plt.show()
+    fig, ax = plt.plot()
+    ax = sns.pairplot(data = df)
+    st.pyplot(fig)
 elif how == "heatmap":
-    sns.heatmap(df.corr(), vmin = -1, vmax = 1, annot = True)
-    plt.show()
+    fig, ax = plt.plot()
+    ax = sns.heatmap(df.corr(), vmin = -1, vmax = 1, annot = True)
+    st.pyplot(fig)
 #else:
     #df.describe()
     
