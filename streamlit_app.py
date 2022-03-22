@@ -54,7 +54,7 @@ if ye:
     df
     
 st.text("Let's explore some data 😄")
-analysis = ["data frame shape", "pairplot", "heatmap", "summary statistics"]
+analysis = ["data frame shape", "pairplot", "heatmap", "summary statistics", "null value count"]
 how = st.selectbox("What would you like to see?", analysis)
 if how == "data frame shape":
     df.shape
@@ -65,9 +65,12 @@ elif how == "heatmap":
     fig,ax = plt.subplots()
     ax = sns.heatmap(df.corr(), vmin = -1, vmax = 1, annot = True)
     st.pyplot(fig)
-else:
+elif how == "summary statistics":
     df2 = pd.DataFrame(df.describe())
     df2
+else:
+    df3 =  pd.DataFrame(df.isnull().sum())
+    df3
 
 st.text("That data looks pretty nice, right?")
 st.text("We're gonna fit a linear regression model on it!")
