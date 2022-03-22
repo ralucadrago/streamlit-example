@@ -56,7 +56,7 @@ elif how == "pairplot":
     fig = sns.pairplot(df) 
     st.pyplot(fig)
 elif how == "heatmap":
-    fig,ax = plt.figure()
+    fig,ax = plt.subplots()
     ax = sns.heatmap(df.corr(), vmin = -1, vmax = 1, annot = True)
     st.pyplot(fig)
 #else:
