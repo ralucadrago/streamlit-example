@@ -96,4 +96,13 @@ st.text("Time to evaluate the performance of our model")
 st.text(f'The train RMSE is {rmse_train}, the test RMSE is {rmse_test}')
 st.text(f'The train MAE is {mae_train}, the test MAE is {mae_test}')
 st.text(f'The train MSE is {mse_train}, the test MSE is {mse_test}')
+
+avg = y_train.mean()
+avg2 = y_test.mean()
+perc = (rmse_train/avg)*100
+perc2 = (rmse_test/avg2)*100
+
+st.text("Okay, but what does that mean? Let's add some context")
+st.text(f'The train RMSE as a percentage of the mean is {perc}, \n the test RMSE as a percentage of the mean is {perc2}')
+st.text("Nice")
     
