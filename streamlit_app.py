@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import statsmodels as sm
 
 st.title("Oh hey its an app")
 
@@ -61,4 +62,15 @@ elif how == "heatmap":
     st.pyplot(fig)
 #else:
     #df.describe()
+    
+X = house[['Income', 'Age', 'Rooms', 'Population']]
+y = house['Price']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
+X_train = sm.add_constant(X_train)
+lin_reg = sm.OLS(y_train, X_train)
+results = lin_reg.fit()
+price_pred = list(results.predict(X_train))
+
+results.params
+results.summary()
     
