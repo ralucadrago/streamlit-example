@@ -14,7 +14,7 @@ st.title("Oh hey its an app")
 st.text("Click the button")
 button = st.button("Click meeee")
 if button:
-    st.title("Why would you do that?")
+    st.title("Why would you do that? 😨")
     
 st.text("Do you like making apps?")
 yes = st.checkbox("Yes")
@@ -33,7 +33,7 @@ st.text("Who's your favourite instructor?")
 opinion = st.selectbox("Pick an instructor", options)
 st.text("Congratulations, you selected {}".format(opinion))
 
-st.text("Coffee is very important")
+st.text("Coffee is very important ☕️")
 coffee = st.slider("How many coffees do you drink in a day?", 0, 10)
 if coffee == 0:
     st.text("Weakling")
@@ -44,7 +44,7 @@ elif coffee < 6:
 else:
     st.text("I respect you")
 
-st.title("Time for some data analysis")
+st.title("Time for some data analysis 😍")
 df = pd.read_csv("USA_Housing.csv")
 df = df.rename(columns = {'Avg. Area Income': 'Income', 'Avg. Area House Age' : 'Age', 'Avg. Area Number of Rooms' : 'Rooms', 'Area Population' : 'Population'})
 
@@ -111,7 +111,7 @@ st.text("Okay, but what does that mean? Let's add some context")
 st.text(f'The train RMSE as a percentage of the mean is {perc}%,\nThe test RMSE as a percentage of the mean is {perc2}%')
 st.text("Nice")
 
-st.text("Now let's visualise our results")
+st.text("Now let's visualise our results 📈")
 
 cols = ['Income', 'Age', 'Rooms', 'Population']
 feature = st.selectbox("Which feature would you like to see the residuals of?", cols)
@@ -119,9 +119,12 @@ fig = plt.figure(figsize=(12,8))
 fig = sm.graphics.plot_regress_exog(results, feature, fig=fig)
 st.pyplot(fig)
 
+st.text("Let's check if our residuals are normally distributed")
 fig = sns.displot(y_test- price_pred2, kind = 'kde')
 st.pyplot(fig)
-                    
+st.text("Yes they are 🎉")
+
+st.text("Now let's compare our predictions to the true values")
 fig = plt.figure(figsize=(10, 6))
 sns.regplot(x=y_test, y=price_pred2, line_kws={"color": "red"})
 plt.ylabel('Predicted price',fontsize ='15')
@@ -130,3 +133,5 @@ plt.xticks(fontsize ='15')
 plt.yticks(fontsize ='15')
 plt.title('Actual vs Predicted price')
 st.pyplot(fig)
+
+st.text("Looking pretty great 😁")
