@@ -1,4 +1,7 @@
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 import streamlit as st
 
 st.title("Oh hey its an app")
@@ -39,20 +42,20 @@ else:
 st.title("Time for some data analysis")
 df = pd.read_csv("USA_Housing.csv")
 
-st.text("Do you want to see the data?")
+st.text("We are going to analyse the USA Housing dataset")
 ye = st.button("Click to show data")
 if ye:
     df
     
 st.text("Let's explore some data 😄")
-analysis = ["data frame shape", "data types", "null value counts", "summary statistics"]
+analysis = ["data frame shape", "pairplot", "heatmap"]
 how = st.selectbox("What would you like to see?", analysis)
 if how == "data frame shape":
     df.shape
-elif how == "data types":
-    df.dtypes
-elif how == "null value counts":
-    df.isnull().sum()
-else:
-    df.describe()
+elif how == "pairplot":
+    sns.pairplot(data = df)
+elif how == "heatmap":
+    sns.heatmap(df.corr(), vmin = -1, vmax = 1, annot = True)
+#else:
+    #df.describe()
     
