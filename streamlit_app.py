@@ -114,7 +114,7 @@ st.text("Nice")
 st.text("Now let's visualise our results")
 
 cols = ['Income', 'Age', 'Rooms', 'Population']
-feature = st.selectbox("Which feature would you like to see the residuals of?")
+feature = st.selectbox("Which feature would you like to see the residuals of?", cols)
 fig = plt.figure(figsize=(12,8))
 fig = sm.graphics.plot_regress_exog(results, feature, fig=fig)
 st.pyplot(fig)
