@@ -81,8 +81,8 @@ day=st.text_input("Guess what! Business quarter please!.... Joking day please!",
 
 st.text("""I personally think everything under 10 degrees C is freezing and everything over is a nice day! 
 If you disagree (weirdo) press the button and we can accmodate for that:""")
-button = st.button("I am strange")
 
+button = st.button("I am strange")
 
 
 if button:
@@ -91,8 +91,11 @@ else:
     acceptable_temperature=10
 
 
-final=nice_day(year,month,day,acceptable_temperature)
-st.text(final)
+button2=st.button("LETS PREDICT")
+
+if button2:
+        final=nice_day(year,month,day,acceptable_temperature)
+        st.text(final)
           
           
           
