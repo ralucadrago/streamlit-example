@@ -89,15 +89,12 @@ if button:
 else:
     acceptable_temperature=10
     
-#button2=st.button("LETS PREDICT")
+button2=st.button("LETS PREDICT")
 
-#if button2:
-       # final=nice_day(year,month,day,acc)
-        #st.text(final)
+if button2:
+        final=nice_day(year,month,day,acceptable_temperature)
+        st.text(final)
           
-          
-#final=nice_day(year,month,day,acc)
-#st.header(final)
 
 
 
