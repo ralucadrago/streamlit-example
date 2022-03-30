@@ -75,10 +75,6 @@ If you'd like to predict weather past that.... stop, why would you?""")
 
 st.header("Let's predict some weather then:")
 
-year
-month
-day
-
 year=st.text_input("Year please!", max_chars=4)
 month=st.text_input("Month please!", max_chars=2)
 day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
@@ -91,11 +87,11 @@ acceptable_temperature=10
 
 if button:
     acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
-    
-    
-if day!=None:
-        final=nice_day(year,month,day,acceptable_temperature)
-        st.text(final)
+
+
+
+final=nice_day(year,month,day,acceptable_temperature)
+st.text(final)
           
           
           
