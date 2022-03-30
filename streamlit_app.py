@@ -86,7 +86,8 @@ if button:
         st.header(final)
              
 
-st.text("For some extra fun! Lets predict if it's a snow day (it's never a snow day in the UK but shhhh)!")                
+st.text("""For some extra fun! Lets predict if it's a snow day! 
+(It's never a snow day in the UK but shhhh)""")                
 button2=st.button("SNOW")
 
 if button2:
