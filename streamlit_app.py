@@ -85,10 +85,11 @@ If you disagree (weirdo) press the button and we can accmodate for that:""")
 button = st.button("I am strange")
 
 
-if button:
-    acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
-else:
+if not button:
     acceptable_temperature=10
+else:
+    acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
+    
 
 
 button2=st.button("LETS PREDICT")
