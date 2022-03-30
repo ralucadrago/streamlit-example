@@ -9,21 +9,21 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 temp = pd.read_csv('temperature_modelling.csv')
 
-cloud = pd.read_csv('cloud_cover_modelling.csv')
+#cloud = pd.read_csv('cloud_cover_modelling.csv')
 
-snow = pd.read_csv('snowfall_modelling.csv')
+#snow = pd.read_csv('snowfall_modelling.csv')
 
 temp.set_index('date', inplace=True)
 
-cloud.set_index('date', inplace=True)
+#cloud.set_index('date', inplace=True)
 
-snow.set_index('date', inplace=True)
+#snow.set_index('date', inplace=True)
 
 sar_temp = SARIMAX(temp, order = (2, 1, 0), seasonal_order = (2, 1, 0, 52.4)).fit()
 
-sar_cloud = SARIMAX(cloud, order = (1, 1, 1), seasonal_order = (1, 1, 1, 52.4)).fit()
+#sar_cloud = SARIMAX(cloud, order = (1, 1, 1), seasonal_order = (1, 1, 1, 52.4)).fit()
 
-sar_snow = SARIMAX(snow, order = (1, 1, 1), seasonal_order = (1, 1, 1, 52.4)).fit()
+#sar_snow = SARIMAX(snow, order = (1, 1, 1), seasonal_order = (1, 1, 1, 52.4)).fit()
 
 
 #def nice_day(date, acceptable_temp=10):
