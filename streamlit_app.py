@@ -83,7 +83,7 @@ button=st.button("LETS PREDICT")
 
 if button:
         final=nice_day(year,month,day)
-        st.text(final)
+        st.header(final)
           
 
 
