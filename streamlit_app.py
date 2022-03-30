@@ -82,7 +82,7 @@ day=st.text_input("Guess what! Business quarter please!.... Joking day please!",
 button=st.button("LETS PREDICT")
 
 if button:
-        final=nice_day(year,month,day,acceptable_temperature)
+        final=nice_day(year,month,day)
         st.text(final)
           
 
