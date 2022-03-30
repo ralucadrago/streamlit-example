@@ -69,3 +69,8 @@ So nothing that I predict can be held against me for time to come!
 st.text("""Now that we got that over with,
 the furthest I can take you with this is 2050. 
 If you'd like to predict weather past that.... stop, why would you?""")
+
+st.header("Let's predict some weather then:")
+year=st.text_input("Year please!")
+month=st.text_input("Month please!")
+day=st.text_input("Guess what! Business quarter please!.... Joking day please!")
