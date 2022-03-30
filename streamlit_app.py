@@ -90,16 +90,16 @@ if not button:
 else:
     acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
     
-acc=acceptable_temperature
 
-button2=st.button("LETS PREDICT")
+#button2=st.button("LETS PREDICT")
 
-if button2:
-        final=nice_day(year,month,day,acc)
-        st.text(final)
+#if button2:
+       # final=nice_day(year,month,day,acc)
+        #st.text(final)
           
           
-          
+final=nice_day(year,month,day,acceptable_temperature)
+st.header(final)
 
 
 
