@@ -34,33 +34,6 @@ def snow_day(year,month,day):
     else:
         return 'No luck on snow soz'
 
-    
-st.title("Sunny Side Up")
-st.header("Welcome to my capstone project! Lets have some fun!")
-
-st.text("""So... Rule number one is never trust the weather person, they're lying to you! 
-In the spirit of that, it's my turn to lie to you. 
-So nothing that I predict can be held against me for time to come!
-""")
-st.text("""Now that we got that over with,
-the furthest I can take you with this is 2050. 
-If you'd like to predict weather past that.... stop, why would you?""")
-
-st.header("Let's predict some weather then:")
-year=st.text_input("Year please!", max_chars=4)
-month=st.text_input("Month please!", max_chars=2)
-day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
-
-st.text("""I personally think everything under 10 degrees C is freezing and everything over is a nice day! 
-If you disagree (weirdo) press the button and we can accmodate for that:""")
-button = st.button("I am strange")
-
-acceptable_temperature=10
-
-if button:
-    acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
-    
-    
 def nice_day(year,month,day,acceptable_temp=10):
     year=int(year)
     month=int(month)
@@ -87,7 +60,36 @@ def nice_day(year,month,day,acceptable_temp=10):
         else:
             return 'uhm you broke me'
     
-final=nice_day(year,month,day,acceptable_temperature)
+
+
+st.title("Sunny Side Up")
+st.header("Welcome to my capstone project! Lets have some fun!")
+
+st.text("""So... Rule number one is never trust the weather person, they're lying to you! 
+In the spirit of that, it's my turn to lie to you. 
+So nothing that I predict can be held against me for time to come!
+""")
+st.text("""Now that we got that over with,
+the furthest I can take you with this is 2050. 
+If you'd like to predict weather past that.... stop, why would you?""")
+
+st.header("Let's predict some weather then:")
+year=st.text_input("Year please!", max_chars=4)
+month=st.text_input("Month please!", max_chars=2)
+day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
+
+st.text("""I personally think everything under 10 degrees C is freezing and everything over is a nice day! 
+If you disagree (weirdo) press the button and we can accmodate for that:""")
+button = st.button("I am strange")
+
+acceptable_temperature=10
+
+if button:
+    acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
+    
+    
+if day!=None:
+        final=nice_day(year,month,day,acceptable_temperature)
 
 st.text(final)
           
