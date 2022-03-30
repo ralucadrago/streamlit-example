@@ -72,5 +72,13 @@ If you'd like to predict weather past that.... stop, why would you?""")
 
 st.header("Let's predict some weather then:")
 year=st.text_input("Year please!", max_chars=4)
-month=st.text_input("Month please!")
-day=st.text_input("Guess what! Business quarter please!.... Joking day please!")
+month=st.text_input("Month please!", max_chars=2)
+day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
+
+st.text("""I personally think everything under 10 degrees C is freezing and everything over is a nice day! 
+        If you disagree (weirdo) press the button and we can accmodate for that:""")
+button = st.button("I am strange")
+if button:
+    acceptable_temp_wuss=st.text_input("fine... what temperature do you deem acceptable?")
+
+    
