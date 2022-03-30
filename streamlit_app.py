@@ -88,6 +88,8 @@ if button:
     acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
 else:
     acceptable_temperature=10
+
+acc=int(acceptable_temperature)
     
 button2=st.button("LETS PREDICT")
 
