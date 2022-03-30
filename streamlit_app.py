@@ -79,10 +79,9 @@ year=st.text_input("Year please!", max_chars=4)
 month=st.text_input("Month please!", max_chars=2)
 day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
 
+button=st.button("LETS PREDICT")
 
-button2=st.button("LETS PREDICT")
-
-if button2:
+if button:
         final=nice_day(year,month,day,acceptable_temperature)
         st.text(final)
           
