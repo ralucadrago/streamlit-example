@@ -59,5 +59,8 @@ def snow_day(year,month,day):
         return 'No luck on snow soz'
 
     
-st.title("Sunny Side Up Capstone")
-st.header("Welcome to my project! Lets have some fun!")
+st.title("Sunny Side Up")
+st.header("Welcome to my capstone project! Lets have some fun!")
+
+st.text("So... Rule number one is never trust the weather person, they're lying to you! In the spirit of that, it's my turn to lie to you so nothing that I predict can be held against me for time to come!")
+st.text("Now that we got that over with, the furthest I can take you with this is 2050, if you'd like to predict weather past that.... stop, why would you?")
