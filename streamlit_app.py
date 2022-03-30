@@ -84,7 +84,7 @@ acceptable_temp=10
 if button:
     acceptable_temp=st.text_input("fine... what temperature do you deem acceptable?")
 
-
+st.text(month)
           
           
           
