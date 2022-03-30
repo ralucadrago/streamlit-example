@@ -62,7 +62,7 @@ def nice_day(year,month,day,acceptable_temp=10):
     
 
 
-st.title("Sunny Side Up")
+st.title("Sunny Side Up☀️")
 st.header("Welcome to my capstone project! Lets have some fun!")
 
 st.text("""So... Rule number one is never trust the weather person, they're lying to you! 
