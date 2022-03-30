@@ -76,9 +76,18 @@ month=st.text_input("Month please!", max_chars=2)
 day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
 
 st.text("""I personally think everything under 10 degrees C is freezing and everything over is a nice day! 
-        If you disagree (weirdo) press the button and we can accmodate for that:""")
+If you disagree (weirdo) press the button and we can accmodate for that:""")
 button = st.button("I am strange")
+
 if button:
     acceptable_temp_wuss=st.text_input("fine... what temperature do you deem acceptable?")
+    result_func1=nice_day(year,month,day,acceptable_temp_wuss)
+else:
+    result_funct1=nice_day(year,month,day)
+    
+st.header(result_func1)
+
+
+
 
     
