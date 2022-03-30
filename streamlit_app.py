@@ -81,11 +81,18 @@ button = st.button("I am strange")
 
 if button:
     acceptable_temp_wuss=st.text_input("fine... what temperature do you deem acceptable?")
-    result_func1=nice_day(year,month,day,acceptable_temp_wuss)
+    help_me=0
 else:
-    result_funct1=nice_day(year,month,day)
-    
-st.header(result_func1)
+    help_me=1
+
+if help_me=0:
+    print(nice_day(year,month,day,acceptable_temp_wuss))
+else:
+    print(nice_day(year,month,day)
+          
+          
+          
+          
 
 
 
