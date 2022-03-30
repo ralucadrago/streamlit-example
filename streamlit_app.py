@@ -74,6 +74,11 @@ the furthest I can take you with this is 2050.
 If you'd like to predict weather past that.... stop, why would you?""")
 
 st.header("Let's predict some weather then:")
+
+year
+month
+day
+
 year=st.text_input("Year please!", max_chars=4)
 month=st.text_input("Month please!", max_chars=2)
 day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
