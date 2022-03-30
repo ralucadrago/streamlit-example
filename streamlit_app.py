@@ -84,11 +84,10 @@ If you disagree (weirdo) write a temperature below and we can accomodate for tha
 
 button = st.button("I am strange")
 
-
-if not button:
-    acceptable_temperature=10
-else:
+if button:
     acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
+else:
+    acceptable_temperature=10
     
 #button2=st.button("LETS PREDICT")
 
@@ -97,8 +96,8 @@ else:
         #st.text(final)
           
           
-final=nice_day(year,month,day,acc)
-st.header(final)
+#final=nice_day(year,month,day,acc)
+#st.header(final)
 
 
 
