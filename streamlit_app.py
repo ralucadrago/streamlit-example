@@ -85,9 +85,9 @@ if button:
 else:
     help_me=1
 
-if help_me=0:
+if help_me==0:
     print(nice_day(year,month,day,acceptable_temp_wuss))
-else:
+elif help_me==1:
     print(nice_day(year,month,day)
           
           
