@@ -79,17 +79,12 @@ st.text("""I personally think everything under 10 degrees C is freezing and ever
 If you disagree (weirdo) press the button and we can accmodate for that:""")
 button = st.button("I am strange")
 
-if button:
-    acceptable_temp_wuss=st.text_input("fine... what temperature do you deem acceptable?")
-    help_me=0
-else:
-    help_me=1
+acceptable_temp=10
 
-if help_me==0:
-    print(nice_day(year,month,day,acceptable_temp_wuss))
-elif help_me==1:
-    print(nice_day(year,month,day)
-          
+if button:
+    acceptable_temp=st.text_input("fine... what temperature do you deem acceptable?")
+
+
           
           
           
