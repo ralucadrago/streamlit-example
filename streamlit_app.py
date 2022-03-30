@@ -84,8 +84,15 @@ button=st.button("LETS PREDICT")
 if button:
         final=nice_day(year,month,day)
         st.header(final)
-          
+             
 
+st.text("For some extra fun! Lets predict if it's a snow day (it's never a snow day in the UK but shhhh)!")                
+button2=st.button("SNOW")
+
+if button2:
+        final2=snow_day(year,month,day)
+        st.header(final2)
+          
 
 
 
