@@ -79,18 +79,7 @@ year=st.text_input("Year please!", max_chars=4)
 month=st.text_input("Month please!", max_chars=2)
 day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
 
-st.text("""I personally think everything under 10 degrees C is freezing and everything over is a nice day! 
-If you disagree (weirdo) write a temperature below and we can accomodate for that:""")
 
-button = st.button("I am strange")
-
-if button:
-    acceptable_temperature=st.text_input("fine... what temperature do you deem acceptable?")
-else:
-    acceptable_temperature=10
-
-acc=int(acceptable_temperature)
-    
 button2=st.button("LETS PREDICT")
 
 if button2:
