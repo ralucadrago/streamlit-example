@@ -90,8 +90,7 @@ if button:
     
 if day!=None:
         final=nice_day(year,month,day,acceptable_temperature)
-
-st.text(final)
+        st.text(final)
           
           
           
