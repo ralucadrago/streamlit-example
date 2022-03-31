@@ -62,8 +62,8 @@ def nice_day(year,month,day,acceptable_temp=10):
     
 
 
-st.title("Sunny Side Up☀️")
-st.header("Welcome to my capstone project! Lets have some fun!")
+st.title("Sunny Side Up!☀️")
+st.header("Welcome to my capstone project! Let's have some fun!")
 
 st.text("""So... Rule number one is never trust the weather person, they're lying to you! 
 In the spirit of that, it's my turn to lie to you. 
@@ -77,7 +77,7 @@ st.header("Let's predict some weather then:")
 
 year=st.text_input("Year please!", max_chars=4)
 month=st.text_input("Month please!", max_chars=2)
-day=st.text_input("Guess what! Business quarter please!.... Joking day please!", max_chars=2)
+day=st.text_input("Guess what! Day please!", max_chars=2)
 
 button=st.button("LETS PREDICT")
 
