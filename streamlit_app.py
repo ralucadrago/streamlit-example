@@ -32,7 +32,7 @@ def snow_day(year,month,day):
     if snow_est>0.002:
         return 'OMG A SNOW DAY OMG'
     else:
-        return 'No luck on snow soz'
+        return 'No luck on snow sorry'
 
 def nice_day(year,month,day,acceptable_temp=10):
     year=int(year)
@@ -46,17 +46,17 @@ def nice_day(year,month,day,acceptable_temp=10):
     
     if temp_est < acceptable_temp:
         if cloud_est > 0.6:
-            return 'Not a nice day!'
+            return 'I would not go out today....'
         elif cloud_est <= 0.6:
-            return 'A nice but cold day!'
+            return 'You found a somewhat nice day if you like the cold!'
         else:
             return 'uhm you broke me'
         
     if temp_est >= acceptable_temp:
         if cloud_est > 0.6:
-            return 'Warm but not nice'
+            return 'I would not go out today....'
         elif cloud_est <= 0.6:
-            return 'Congrats! You unlocked a nice day!'
+            return 'Congrats! You unlocked a lovely day! Go have a picnic!'
         else:
             return 'uhm you broke me'
     
