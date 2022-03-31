@@ -1,6 +1,3 @@
-# Welcome to Streamlit!
+# Sunny Side Up!
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+This is the code for my first StreamLit app. Based on a project I worked on (time series forcasting), this app was made to try to predict upcoming nice days! Overall project goal is to see if I can use data from https://www.renewables.ninja/ to predict when to have a picnic!
